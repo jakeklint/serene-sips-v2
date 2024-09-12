@@ -8,9 +8,25 @@
 }
 /* header section */
 header {
-  /* border: 1px solid black; */
   text-align: center;
   padding: 30px;
+}
+.bgi-one,
+.bgi-two {
+  background-image: url(images/Coffee\ Types\ Banner\ Desktop.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180px;
+  height: 120px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 70px;
+  border-radius: 100%;
+}
+.head-content {
+  width: 500px;
+  display: inline-block;
 }
 header h1,
 #our-menu h1,
@@ -34,6 +50,12 @@ header a {
   text-decoration: none;
   border-radius: 8px;
 }
+.bgi-two {
+  background-image: url(images/dessert_97357067.jpg);
+  box-shadow: 2px 2px #49281a;
+  margin-left: 70px;
+}
+
 /* nav section */
 nav {
   /* border: 1px solid black; */
