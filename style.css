@@ -28,9 +28,10 @@ header {
   width: 500px;
   display: inline-block;
 }
-header h1,
+#header h1,
 #our-menu h1,
-#about-us h1 {
+#about-us h1,
+#contact-us h1 {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: normal;
@@ -46,7 +47,7 @@ header p {
 header a {
   background-color: #49281a;
   padding: 10px 20px;
-  color: white;
+  color: #f0e2c5;
   text-decoration: none;
   border-radius: 8px;
 }
@@ -61,14 +62,17 @@ nav {
   /* border: 1px solid black; */
   text-align: center;
   padding: 20px 0;
+  position: sticky;
+  top: 1px;
 }
 nav ul li {
   display: inline-block;
   border: 1px solid black;
   padding: 10px 20px;
-  margin-right: 10px;
+  margin-right: 20px;
   transition: 0.5s;
   border-radius: 5px;
+  background-color: #49281a;
 }
 /* hover */
 nav ul li:hover {
@@ -76,7 +80,8 @@ nav ul li:hover {
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #f1e1c5;
+  background-color: #49281a;
 }
 /* our menu section */
 .menu {
@@ -87,17 +92,23 @@ nav ul li a {
   font-family: lato, serif;
   padding: 10px 0;
   text-align: left;
+  color: #49281a;
+  margin-bottom: 10px;
+}
+.card-collection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .card {
   border: 1px solid black;
   width: 250px;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin: 10px 20px 10px 0px;
   padding: 10px;
   text-align: center;
   font-family: lato, serif;
   border-radius: 4px;
-  display: inline-block;
 }
 .card-img-top {
   max-width: 100%;
@@ -116,7 +127,7 @@ nav ul li a {
 .card button {
   width: 100%;
   background-color: #49281a;
-  color: #f1e1c5;
+  color: #f0e2c5;
   padding: 10px 0;
   border: none;
   border-radius: 4px;
@@ -128,7 +139,7 @@ nav ul li a {
 footer p {
   /* border: 1px solid black; */
   width: 90%;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 10px;
 }
 #about-us p,
@@ -141,18 +152,20 @@ footer p {
 }
 /* contact us section */
 form {
-  border: 1px solid;
+  /* border: 1px solid; */
   font-family: Lato, serif;
   width: 75%;
   margin: 10px auto;
 }
 form div {
-  padding: 10px 0;
+  padding: 20px 10px;
+  border: 1px solid#49281a;
+  margin: 10px;
 }
 .form-label {
   display: inline-block;
   width: 30%;
-  text-align: right;
+  text-align: center;
 }
 .form-control {
   width: 60%;
@@ -166,9 +179,24 @@ form div {
   height: 40px;
   background-color: #49281a;
   color: #f1e1c5;
-  margin: 10px auto 0;
+  margin: 20px auto 0;
 }
 footer p {
   text-align: center;
   font-size: 0.8em;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+.social-icon {
+  text-align: center;
+  color: #49281a;
+}
+.mg-10 {
+  margin-right: 10px;
+}
+.up-arrow {
+  color: #49281a;
+  font-size: 40px;
+  float: right;
+  padding: 20px;
 }
